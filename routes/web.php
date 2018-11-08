@@ -14,3 +14,11 @@
 Route::get('/', function () {
     return view('welcome');
 });
+
+Route::get('create','AdminController@create');
+Route::get('index','AdminController@index');
+Route::post('store','AdminController@store');
+Route::get('detail','AdminController@detail');
+Route::get('edit','AdminController@edit');
+Route::post('update','AdminController@edit');
+Route::get('destroy','AdminController@destroy');
